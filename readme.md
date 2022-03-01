@@ -7,6 +7,7 @@ json-server
 #images gratuitess
 [https://pixabay.com/](https://pixabay.com/)
 
-#changer l'accueil 
+#accueil 
 
-port par defaut 3001
+public/index.html
+ 
