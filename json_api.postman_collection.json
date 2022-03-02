@@ -1,0 +1,601 @@
+{
+	"info": {
+		"_postman_id": "b7e92aa0-964a-4fa6-a374-75f8d81cb52d",
+		"name": "json_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3001/produits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/produits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"produits"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3001/produits",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/produits",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"produits"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin, Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "664"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"298-po8DHm6EQ0655wwiHlxe+l8ITeI\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Mar 2022 00:01:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "[\n    {\n        \"id\": 1,\n        \"designation\": \"pomme\",\n        \"prix\": 200,\n        \"description\": \"Une belle pomme\",\n        \"images\": \"https://cdn.pixabay.com/photo/2016/11/18/13/47/apple-1834639_960_720.jpg\",\n        \"date\": \"2022-03-21\"\n    },\n    {\n        \"id\": 2,\n        \"designation\": \"banane\",\n        \"prix\": 500,\n        \"description\": \"Une banane drole\",\n        \"images\": \"https://cdn.pixabay.com/photo/2015/03/14/19/45/suit-673697__340.jpg\",\n        \"date\": \"2022-03-20\"\n    },\n    {\n        \"id\": 3,\n        \"designation\": \"pomme 🍏\",\n        \"prix\": 300,\n        \"description\": \"Une belle pomme\",\n        \"images\": \"https://cdn.pixabay.com/photo/2016/11/18/13/47/apple-1834639_960_720.jpg\",\n        \"date\": \"2022-03-21\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3001/produits",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"designation\": \"pomme 🍏\",\r\n    \"prix\": 300,\r\n    \"description\": \"Une belle pomme\",\r\n    \"images\": \"https://cdn.pixabay.com/photo/2016/11/18/13/47/apple-1834639_960_720.jpg\",\r\n    \"date\": \"2022-03-21\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/produits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"produits"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3001/produits Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"designation\": \"pomme 🍏\",\r\n    \"prix\": 300,\r\n    \"description\": \"Une belle pomme\",\r\n    \"images\": \"https://cdn.pixabay.com/photo/2016/11/18/13/47/apple-1834639_960_720.jpg\",\r\n    \"date\": \"2022-03-21\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/produits",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"produits"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin, X-HTTP-Method-Override, Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Location"
+						},
+						{
+							"key": "Location",
+							"value": "http://localhost:3001/produits/4"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "207"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"cf-4aeHfYdgsXUpYhkyWgcx/I1R9s8\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Mar 2022 00:02:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\n    \"id\": 4,\n    \"designation\": \"pomme 🍏\",\n    \"prix\": 300,\n    \"description\": \"Une belle pomme\",\n    \"images\": \"https://cdn.pixabay.com/photo/2016/11/18/13/47/apple-1834639_960_720.jpg\",\n    \"date\": \"2022-03-21\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3001/produits/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/produits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"produits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/produits/4",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": 4,\r\n        \"designation\": \"pomme 🍏\",\r\n        \"prix\": 400,\r\n        \"description\": \"Une belle pomme\",\r\n        \"images\": \"https://cdn.pixabay.com/photo/2016/11/18/13/47/apple-1834639_960_720.jpg\",\r\n        \"date\": \"2022-03-21\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/produits/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"produits",
+						"4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3001/produits/1 Copy",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": 4,\r\n        \"designation\": \"pomme 🍏\",\r\n        \"prix\": 400,\r\n        \"description\": \"Une belle pomme\",\r\n        \"images\": \"https://cdn.pixabay.com/photo/2016/11/18/13/47/apple-1834639_960_720.jpg\",\r\n        \"date\": \"2022-03-21\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/produits/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"produits",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin, Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "207"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"cf-i0uZ/3NClBNcqPQvJ4t5E2IKiX8\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Mar 2022 00:04:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\n    \"id\": 4,\n    \"designation\": \"pomme 🍏\",\n    \"prix\": 400,\n    \"description\": \"Une belle pomme\",\n    \"images\": \"https://cdn.pixabay.com/photo/2016/11/18/13/47/apple-1834639_960_720.jpg\",\n    \"date\": \"2022-03-21\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3001/produits/4",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": 4,\r\n        \r\n        \"prix\": 500\r\n      \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/produits/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"produits",
+						"4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3001/produits/4",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": 4,\r\n        \r\n        \"prix\": 500\r\n      \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/produits/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"produits",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin, Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "209"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d1-gjeDQVvPFgvffP3scjgK6gopdio\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Mar 2022 00:05:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\n    \"id\": 4,\n    \"designation\": \"pomme 4 🍏\",\n    \"prix\": 500,\n    \"description\": \"Une belle pomme\",\n    \"images\": \"https://cdn.pixabay.com/photo/2016/11/18/13/47/apple-1834639_960_720.jpg\",\n    \"date\": \"2022-03-21\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3001/produits/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/produits/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"produits",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:3001/produits/1",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/produits/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"produits",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin, Accept-Encoding"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Mar 2022 00:03:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{}"
+				}
+			]
+		}
+	]
+}
